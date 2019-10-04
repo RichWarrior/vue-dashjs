@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
-    <unauthorizeLayout v-if="!$store.getters.isAuthenticated && !$store.getters.isBlankTemplate"/>
+  <v-app>
+    <unauthorizeLayout v-if="!$store.getters.isAuthenticated && !$store.getters.isBlankTemplate" />
     <authorizeLayout v-if="$store.getters.isAuthenticated && !$store.getters.isBlankTemplate" />
-    <blankLayout v-if="$store.getters.isBlankTemplate"/>
-  </div>
+    <blankLayout v-if="$store.getters.isBlankTemplate" />
+  </v-app>
 </template>
 
 <script>
