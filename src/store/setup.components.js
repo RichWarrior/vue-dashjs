@@ -1,7 +1,7 @@
 //Components
 import toolbar from '@/components/toolbar';
 import sidebar from '@/components/sidebar';
-import footer from '@/components/sidebar';
+import footer from '@/components/footer';
 
 //Layouts
 import authorizelayout from '@/layouts/authorizeLayout';
