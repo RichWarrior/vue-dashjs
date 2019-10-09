@@ -1,20 +1,16 @@
 <template>
   <v-app>
-    <unauthorizeLayout v-if="!$store.getters.isAuthenticated && !$store.getters.isBlankTemplate" />
-    <authorizeLayout v-if="$store.getters.isAuthenticated && !$store.getters.isBlankTemplate" />
-    <blankLayout v-if="$store.getters.isBlankTemplate" />
+    <dashjs-authorize v-if="$store.getters.isAuthenticated && !$store.getters.isBlankTemplate"></dashjs-authorize>
+    <dashjs-unauthorize v-if="!$store.getters.isAuthenticated && !$store.getters.isBlankTemplate"></dashjs-unauthorize>
+    <dashjs-blank v-if="$store.getters.isBlankTemplate"></dashjs-blank>
   </v-app>
 </template>
 
 <script>
-import unauthorizeLayout from "@/layouts/unauthorizeLayout.vue";
-import authorizeLayout from "@/layouts/authorizeLayout.vue";
-import blankLayout from "@/layouts/blankLayout.vue";
 export default {
-  components: {
-    unauthorizeLayout,
-    authorizeLayout,
-    blankLayout
+  name: "App",
+  created() {
+  
   }
 };
 </script>

@@ -8,7 +8,7 @@ import {
 } from './mutations.type';
 
 const state = {
-    isAuthenticated : false,
+    isAuthenticated : true,
     isBlankTemplate : false
 }
 
