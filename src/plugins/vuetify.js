@@ -12,7 +12,7 @@ export default new Vuetify({
     themes: {
       light: {
         toolbarColor: '#1797BE',
-        sidebarColor : '#3A3F51'
+        sidebarColor : '#3A3F51',                    
       }
     }
   }
