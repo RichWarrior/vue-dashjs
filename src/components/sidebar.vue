@@ -225,6 +225,54 @@ export default {
           name:'Error 500',
           icon:'fas fa-bug',
           route:'/500'
+      },
+      {
+        id:25,
+        parentMenuId:0,
+        name:'Extras',
+        icon:'fa fa-mug-hot',
+        route:'/Extras'
+      },{
+        id:26,
+        parentMenuId:25,
+        name:'Bug Tracker',
+        icon:'fa fa-bug',
+        route:'/BugTracker'
+      },
+      {
+        id:27,
+        parentMenuId:25,
+        name:'FAQ',
+        icon:'fa fa-headset',
+        route:'/faq'
+      },
+      {
+        id:28,
+        parentMenuId:25,
+        name:'File Manager',
+        icon:'fa fa-hdd',
+        route:'/FileManager'
+      },
+      {
+        id:29,
+        parentMenuId:25,
+        name:'Plans',
+        icon:'fa fa-file-invoice-dollar',
+        route:'/Plans'
+      },
+      {
+        id:30,
+        parentMenuId:25,
+        name:'Timeline',
+        icon:'fa fa-stopwatch',
+        route:'/Timeline'
+      },
+      {
+        id:31,
+        parentMenuId:25,
+        name:'Calendar',
+        icon:'fa fa-calendar-alt',
+        route:'/Calendar'
       }
     ]
   }),
