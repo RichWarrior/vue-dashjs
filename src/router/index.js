@@ -11,6 +11,16 @@ export default new Router({
       path:'/',
       name:'/',
       component : () => import ('@/views/Dashboard/index')
+    },
+    {
+      path:'/Buttons',
+      name:'/Buttons',
+      component : () => import('@/views/Elements/Button')
+    },
+    {
+      path:'/Notification',
+      name:'/Notification',
+      component:()=>import('@/views/Elements/Notification')
     }
   ]
 })

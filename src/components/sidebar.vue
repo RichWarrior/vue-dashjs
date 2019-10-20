@@ -2,15 +2,15 @@
   <div class="sidebar">
     <v-navigation-drawer
       app
-      v-model="drawerStatus"
-      absolute
+      v-model="drawerStatus"      
+      fixed      
       color="sidebarColor"
       dark
       inset
       @transitionend="transitionend"
     >
       <v-app-bar dark color="toolbarColor" class="elevation-12">
-        <v-toolbar-title class="text-uppercase hidden-sm-and-down">
+        <v-toolbar-title class="text-uppercase">
           <span class="align-center">Dash</span>
           <span class="font-weight-black">JS</span>
         </v-toolbar-title>
@@ -91,7 +91,7 @@ export default {
         parentMenuId: 3,
         name: "Notification",
         icon: "fa fa-comment-dots",
-        route: "/Buttons"
+        route: "/Notification"
       },
       {
         id: 6,
