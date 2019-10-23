@@ -36,6 +36,11 @@ export default new Router({
       name:'/Tree',
       path:'/Tree',
       component:()=>import('@/views/Elements/TreeView')
+    },
+    {
+      name:'/Cards',
+      path:'/Cards',
+      component:()=>import('@/views/Elements/Cards')
     }
   ]
 })
