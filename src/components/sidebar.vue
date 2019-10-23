@@ -106,170 +106,163 @@ export default {
         name: "Spinner",
         icon: "fa fa-spinner",
         route: "/Spinner"
-      },
+      },      
       {
         id: 8,
-        parentMenuId: 3,
-        name: "Drop Down",
-        icon: "fa fa-chevron-circle-down",
-        route: "/DropDown"
-      },
-      {
-        id: 9,
         parentMenuId: 3,
         name: "Tree",
         icon: "fas fa-stream",
         route: "/Tree"
       },
       {
-        id: 10,
+        id: 9,
         parentMenuId: 3,
         name: "Cards",
         icon: "fas fa-id-card-alt",
         route: "/Cards"
       },
       {
-        id: 11,
+        id: 10,
         parentMenuId: 0,
         name: "Forms",
         icon: "fab fa-wpforms",
         route: "/Forms"
       },
       {
-        id: 12,
-        parentMenuId: 11,
+        id: 11,
+        parentMenuId: 10,
         name: "Standart",
         icon: "fa fa-font",
         route: "/Forms"
       },
       {
-        id: 13,
-        parentMenuId: 11,
+        id: 12,
+        parentMenuId: 10,
         name: "Wizard",
         icon: "fa fa-magic",
         route: "/WizardForms"
       },
       {
-        id: 14,
+        id: 13,
         parentMenuId: 0,
         name: "Charts",
         icon: "fas fa-chart-pie",
         route: "/Charts"
       },
       {
-        id: 15,
-        parentMenuId: 14,
+        id: 14,
+        parentMenuId: 13,
         name: "Flot",
         icon: "fas fa-chart-pie",
         route: "/ChartsFlot"
       },
       {
-        id: 16,
-        parentMenuId: 14,
+        id: 15,
+        parentMenuId: 13,
         name: "Radial",
         icon: "fas fa-chart-pie",
         route: "/ChartsRadial"
       },
       {
-        id: 17,
+        id: 16,
         parentMenuId: 0,
         name: "Table",
         icon: "fa fa-table",
         route: "/Table"
       },
       {
-          id:18,
+          id:17,
           parentMenuId:0,
           name:'Pages',
           icon:'fas fa-folder',
           route:'/Pages'
       },
       {
-          id:19,
-          parentMenuId:18,
+          id:18,
+          parentMenuId:17,
           name:'Login',
           icon:'fas fa-sign-in-alt',
           route:'/Login'
       },
       {
-          id:20,
-          parentMenuId:18,
+          id:19,
+          parentMenuId:17,
           name:'Register',
           icon:'fas fa-user-plus',
           route:'/register'
       },
       {
-          id:21,
-          parentMenuId:18,
+          id:20,
+          parentMenuId:17,
           name:'Recover Password',
           icon:'fa fa-unlock-alt',
           route:'/RecoverPassword'
       },
        {
-          id:22,
-          parentMenuId:18,
+          id:21,
+          parentMenuId:17,
           name:'Lock',
           icon:'fa fa-lock',
           route:'/Lock'
       },
       {
-          id:23,
-          parentMenuId:18,
+          id:22,
+          parentMenuId:17,
           name:'Not Found',
           icon:'fas fa-exclamation-triangle',
           route:'*'
       },
       {
-          id:24,
-          parentMenuId:18,
+          id:23,
+          parentMenuId:17,
           name:'Error 500',
           icon:'fas fa-bug',
           route:'/500'
       },
       {
-        id:25,
+        id:24,
         parentMenuId:0,
         name:'Extras',
         icon:'fa fa-mug-hot',
         route:'/Extras'
       },{
-        id:26,
-        parentMenuId:25,
+        id:25,
+        parentMenuId:24,
         name:'Bug Tracker',
         icon:'fa fa-bug',
         route:'/BugTracker'
       },
       {
-        id:27,
-        parentMenuId:25,
+        id:26,
+        parentMenuId:24,
         name:'FAQ',
         icon:'fa fa-headset',
         route:'/faq'
       },
       {
-        id:28,
-        parentMenuId:25,
+        id:27,
+        parentMenuId:24,
         name:'File Manager',
         icon:'fa fa-hdd',
         route:'/FileManager'
       },
       {
-        id:29,
-        parentMenuId:25,
+        id:28,
+        parentMenuId:24,
         name:'Plans',
         icon:'fa fa-file-invoice-dollar',
         route:'/Plans'
       },
       {
-        id:30,
-        parentMenuId:25,
+        id:29,
+        parentMenuId:24,
         name:'Timeline',
         icon:'fa fa-stopwatch',
         route:'/Timeline'
       },
       {
-        id:31,
-        parentMenuId:25,
+        id:30,
+        parentMenuId:24,
         name:'Calendar',
         icon:'fa fa-calendar-alt',
         route:'/Calendar'

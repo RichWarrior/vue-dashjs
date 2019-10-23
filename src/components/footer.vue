@@ -1,18 +1,22 @@
 <template>
   <div>
-    <v-footer dark class="transparent elevation-12 hidden-md-and-down" inset app>
-      <v-col class="text-left" cols="12">
-        <span class="black--text">
+    <v-footer height="50" dark class="transparent elevation-12 hidden-md-and-down" inset app>
+      <span class="black--text">
           <strong>DashJs Footer</strong>
         </span>
-      </v-col>
+        <div class="flex-grow-1"></div>
+        <span class="black--text">
+          <strong>Version: {{version}}</strong>
+        </span>
     </v-footer>
-     <v-footer dark class="transparent elevation-12 hidden-lg-and-up" inset app v-if="!drawerStatus">
-      <v-col class="text-left" cols="12">
+    <v-footer height="50" dark class="transparent elevation-12 hidden-lg-and-up" inset app v-if="!drawerStatus">
         <span class="black--text">
           <strong>DashJs Footer</strong>
         </span>
-      </v-col>
+        <div class="flex-grow-1"></div>
+        <span class="black--text">
+          <strong>Version: {{version}}</strong>
+        </span>
     </v-footer>
   </div>
 </template>
@@ -24,6 +28,13 @@ export default {
       type: Boolean,
       required: true
     }
+  },
+  data: () => ({
+    version: ""
+  }),
+  created() {
+    let versionCode = JSON.stringify(require("../../package.json").version);
+    this.version = versionCode.replace('"','').replace('"','');
   }
 };
 </script>

@@ -65,7 +65,7 @@
                 <v-btn depressed color="warning" class="ma-1" @click="showWarningMessage">
                   <h1 class="caption">Show Warning Message</h1>
                 </v-btn>
-                <v-btn depressed class="ma-1" color="error" @click="showWarningMessage">
+                <v-btn depressed class="ma-1" color="error" @click="showErrorMessage">
                   <h1 class="caption">Show Error Message</h1>
                 </v-btn>
                 <v-btn depressed color="primary" class="ma-1" @click="showBasicMessage">

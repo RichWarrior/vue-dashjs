@@ -2,7 +2,7 @@
   <v-app>
     <dashjs-toolbar v-on:DrawerStatusChange="DrawerStatusChange" :drawerStatus="drawerStatus"></dashjs-toolbar>
     <dashjs-sidebar :drawerStatus="drawerStatus" v-on:transtionend="transtionend"></dashjs-sidebar>
-    <v-content>
+    <v-content class="mb-5">
       <router-view></router-view>
     </v-content>
     <dashjs-footer :drawerStatus="drawerStatus"></dashjs-footer>

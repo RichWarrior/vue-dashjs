@@ -31,6 +31,11 @@ export default new Router({
       name:'/Spinner',
       path:'/Spinner',
       component:() => import('@/views/Elements/Spinner')
+    },
+    {
+      name:'/Tree',
+      path:'/Tree',
+      component:()=>import('@/views/Elements/TreeView')
     }
   ]
 })
