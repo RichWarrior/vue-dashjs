@@ -394,7 +394,7 @@
     </v-col>
     <v-col cols="12" md="6" sm="12">
       <v-hover v-slot:default="{hover}">
-        <v-card height="775" :elevation="hover ? 12 : 2">
+        <v-card height="850" :elevation="hover ? 12 : 2">
           <v-toolbar>
             <v-toolbar-title>
               <h1 class="title">Loading Card</h1>
@@ -449,7 +449,7 @@
     </v-col>
     <v-col cols="12" md="6" sm="12">
       <v-hover v-slot:default="{hover}">
-        <v-card height="775" :elevation="hover?12:2">
+        <v-card height="850" :elevation="hover?12:2">
           <v-toolbar>
             <v-toolbar-title>
               <h1 class="title">Weather card</h1>
