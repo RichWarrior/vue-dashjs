@@ -130,7 +130,7 @@
               <h1 class="caption">Floating buttons are rounded and usually contain an icon.</h1>
             </v-toolbar-title>
           </v-toolbar>
-          <v-car-text class="ma-1">
+          <v-card-text class="ma-1">
             <div class="text-center">
               <v-btn class="mx-2" fab dark small color="primary">
                 <v-icon dark>mdi-minus</v-icon>
@@ -156,7 +156,7 @@
                 <v-icon dark>mdi-android</v-icon>
               </v-btn>
             </div>
-          </v-car-text>
+          </v-card-text>
         </v-card>
       </v-hover>
     </v-col>

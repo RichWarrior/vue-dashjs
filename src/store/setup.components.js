@@ -14,6 +14,11 @@ import moment from 'moment';
 import VueToast from 'vue-toast-notification';
 import 'vue-toast-notification/dist/index.css';
 
+//Loader.css
+import 'vue-loaders/dist/vue-loaders.css';
+import VueLoaders from 'vue-loaders';
+
+
 function setupComponents(Vue){
     //Defined Components
     Vue.component('dashjs-toolbar',toolbar);
@@ -32,6 +37,8 @@ function setupComponents(Vue){
     moment.locale('tr')
     
     Vue.use(VueToast)
+    Vue.use(VueLoaders);
+
 }
 
 export {

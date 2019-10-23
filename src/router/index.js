@@ -26,6 +26,11 @@ export default new Router({
       name:'/Carousel',
       path:'/Carousel',
       component:()=>import('@/views/Elements/Carousel')
+    },
+    {
+      name:'/Spinner',
+      path:'/Spinner',
+      component:() => import('@/views/Elements/Spinner')
     }
   ]
 })
