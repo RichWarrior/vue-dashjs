@@ -21,6 +21,11 @@ export default new Router({
       path:'/Notification',
       name:'/Notification',
       component:()=>import('@/views/Elements/Notification')
+    },
+    {
+      name:'/Carousel',
+      path:'/Carousel',
+      component:()=>import('@/views/Elements/Carousel')
     }
   ]
 })
