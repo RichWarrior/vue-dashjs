@@ -41,6 +41,11 @@ export default new Router({
       name:'/Cards',
       path:'/Cards',
       component:()=>import('@/views/Elements/Cards')
+    },
+    {
+      name:'/Forms',
+      path:'/Forms',
+      component:()=>import('@/views/Forms/Forms')
     }
   ]
 })
