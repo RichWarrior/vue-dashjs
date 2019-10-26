@@ -46,6 +46,11 @@ export default new Router({
       name:'/Forms',
       path:'/Forms',
       component:()=>import('@/views/Forms/Forms')
+    },
+    {
+      name:'/WizardForms',
+      path:'/WizardForms',
+      component:()=>import('@/views/Forms/WizardForms')
     }
   ]
 })

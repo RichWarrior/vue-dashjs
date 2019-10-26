@@ -148,121 +148,107 @@ export default {
         name: "Charts",
         icon: "fas fa-chart-pie",
         route: "/Charts"
-      },
+      },     
       {
         id: 14,
-        parentMenuId: 13,
-        name: "Flot",
-        icon: "fas fa-chart-pie",
-        route: "/ChartsFlot"
-      },
-      {
-        id: 15,
-        parentMenuId: 13,
-        name: "Radial",
-        icon: "fas fa-chart-pie",
-        route: "/ChartsRadial"
-      },
-      {
-        id: 16,
         parentMenuId: 0,
         name: "Table",
         icon: "fa fa-table",
         route: "/Table"
       },
       {
-          id:17,
+          id:15,
           parentMenuId:0,
           name:'Pages',
           icon:'fas fa-folder',
           route:'/Pages'
       },
       {
-          id:18,
-          parentMenuId:17,
+          id:16,
+          parentMenuId:15,
           name:'Login',
           icon:'fas fa-sign-in-alt',
           route:'/Login'
       },
       {
-          id:19,
-          parentMenuId:17,
+          id:17,
+          parentMenuId:15,
           name:'Register',
           icon:'fas fa-user-plus',
           route:'/register'
       },
       {
-          id:20,
-          parentMenuId:17,
+          id:18,
+          parentMenuId:15,
           name:'Recover Password',
           icon:'fa fa-unlock-alt',
           route:'/RecoverPassword'
       },
        {
-          id:21,
-          parentMenuId:17,
+          id:19,
+          parentMenuId:15,
           name:'Lock',
           icon:'fa fa-lock',
           route:'/Lock'
       },
       {
-          id:22,
-          parentMenuId:17,
+          id:20,
+          parentMenuId:15,
           name:'Not Found',
           icon:'fas fa-exclamation-triangle',
           route:'*'
       },
       {
-          id:23,
-          parentMenuId:17,
+          id:21,
+          parentMenuId:15,
           name:'Error 500',
           icon:'fas fa-bug',
           route:'/500'
       },
       {
-        id:24,
+        id:22,
         parentMenuId:0,
         name:'Extras',
         icon:'fa fa-mug-hot',
         route:'/Extras'
       },{
-        id:25,
-        parentMenuId:24,
+        id:23,
+        parentMenuId:22,
         name:'Bug Tracker',
         icon:'fa fa-bug',
         route:'/BugTracker'
       },
       {
-        id:26,
-        parentMenuId:24,
+        id:24,
+        parentMenuId:22,
         name:'FAQ',
         icon:'fa fa-headset',
         route:'/faq'
       },
       {
-        id:27,
-        parentMenuId:24,
+        id:25,
+        parentMenuId:22,
         name:'File Manager',
         icon:'fa fa-hdd',
         route:'/FileManager'
       },
       {
-        id:28,
-        parentMenuId:24,
+        id:26,
+        parentMenuId:22,
         name:'Plans',
         icon:'fa fa-file-invoice-dollar',
         route:'/Plans'
       },
       {
-        id:29,
-        parentMenuId:24,
+        id:27,
+        parentMenuId:22,
         name:'Timeline',
         icon:'fa fa-stopwatch',
         route:'/Timeline'
       },
       {
-        id:30,
-        parentMenuId:24,
+        id:28,
+        parentMenuId:22,
         name:'Calendar',
         icon:'fa fa-calendar-alt',
         route:'/Calendar'

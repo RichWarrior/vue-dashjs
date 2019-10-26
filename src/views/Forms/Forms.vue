@@ -1146,7 +1146,8 @@ export default {
     ex2: { label: "track-color", val: 75, color: "green lighten-1" },
     ex3: { label: "thumb-color", val: 50, color: "red" },
     validationvalue: 30,
-    validationrules: [v => v <= 40 || "Only 40 in stock"]
+    validationrules: [v => v <= 40 || "Only 40 in stock"],
+    valid:false
   }),
   methods: {
     validate() {
