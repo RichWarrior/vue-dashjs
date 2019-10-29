@@ -51,6 +51,11 @@ export default new Router({
       name:'/WizardForms',
       path:'/WizardForms',
       component:()=>import('@/views/Forms/WizardForms')
+    },
+    {
+      name:'/Charts',
+      path:'/Charts',
+      component:()=>import('@/views/Charts/Charts')
     }
   ]
 })
