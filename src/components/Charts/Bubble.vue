@@ -9,10 +9,10 @@ export default {
         datasets: [
           {
             label: "Data One",
-            backgroundColor: "#f87979",
+            backgroundColor: "#1797BE",
             pointBackgroundColor: "white",
             borderWidth: 1,
-            pointBorderColor: "#249EBF",
+            pointBorderColor: "#1797BE",
             data: [
               {
                 x: 100,
