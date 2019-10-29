@@ -55,7 +55,7 @@ export default new Router({
     {
       name:'/Charts',
       path:'/Charts',
-      component:()=>import('@/views/Charts/Charts')
+      component:()=>import('@/views/Charts/index')
     }
   ]
 })
