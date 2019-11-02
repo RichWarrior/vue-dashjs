@@ -61,6 +61,11 @@ export default new Router({
       name:'/Table',
       path:'/Table',
       component:()=>import('@/views/Table/index')
+    },
+    {
+      name:'/Login',
+      path:'/Login',
+      component:()=>import('@/views/Pages/Login') 
     }
   ]
 })

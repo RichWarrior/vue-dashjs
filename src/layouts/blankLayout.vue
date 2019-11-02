@@ -1,6 +1,21 @@
 <template>
-    <h1 class="title">Blank</h1>
+  <v-app>
+    <v-content class="mb-5">
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
+    </v-content>
+    <dashjs-footer :drawerStatus="drawer"></dashjs-footer>
+  </v-app>
 </template>
+
+<script>
+export default {
+  data:() => ({
+    drawer:false
+  })
+}
+</script>
 
 <style scoped>
 .fade-enter-active,

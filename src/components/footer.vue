@@ -26,7 +26,7 @@ export default {
   props: {
     drawerStatus: {
       type: Boolean,
-      required: true
+      required: true,
     }
   },
   data: () => ({

@@ -1,7 +1,7 @@
 import {
     CHECK_AUTHORIZE_STATUS,
     CHANGE_BLANK_STATUS
-} from './actions.type';
+    } from './actions.type';
 import {
     SET_AUTHORIZE_STATUS,
     SET_BLANK_STATUS
@@ -26,7 +26,7 @@ const actions = {
     },
     [CHANGE_BLANK_STATUS](context,data){
         context.commit(SET_BLANK_STATUS,data);
-    }
+    },    
 }
 
 const mutations = {
