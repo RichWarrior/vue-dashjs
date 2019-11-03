@@ -32,6 +32,7 @@ const actions = {
 const mutations = {
     [SET_AUTHORIZE_STATUS](state,payload){
         state.isAuthenticated = payload;
+        window.console.log(state.isAuthenticated+' '+payload)
     },
     [SET_BLANK_STATUS](state,payload){
         state.isBlankTemplate = payload;

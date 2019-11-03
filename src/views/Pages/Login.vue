@@ -63,10 +63,7 @@
 </template>
 
 <script>
-import {
-  CHECK_AUTHORIZE_STATUS,
-  CHANGE_BLANK_STATUS
-} from "@/store/actions.type";
+import {CHECK_AUTHORIZE_STATUS} from '@/store/actions.type';
 export default {
   data: () => ({
     valid: false,
@@ -88,11 +85,10 @@ export default {
     login() {
       this.$router.push({ path: "/" });
     }
-  },
-  beforeMount() {
-    this.$store.dispatch(CHECK_AUTHORIZE_STATUS, false);
-    this.$store.dispatch(CHANGE_BLANK_STATUS, true);
-  }
+  }, 
+  created(){
+    this.$store.dispatch(CHECK_AUTHORIZE_STATUS,false)
+  } 
 };
 </script>
 

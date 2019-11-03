@@ -1,17 +1,20 @@
 <template>
-    <h1 class="title">UnAuthorize</h1>
+    <v-app>
+    <v-content class="mb-5">
+      <router-view />
+    </v-content>
+    <dashjs-footer :drawerStatus="drawer"></dashjs-footer>
+  </v-app>
 </template>
 
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+<script>
+import {CHECK_AUTHORIZE_STATUS} from '@/store/actions.type';
+export default {
+  data : () => ({
+    drawer:false
+  }),
+  beforeDestroy(){
+    this.$store.dispatch(CHECK_AUTHORIZE_STATUS,true);
+  }
 }
-
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
-</style>
+</script>
