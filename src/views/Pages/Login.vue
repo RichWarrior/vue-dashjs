@@ -1,6 +1,6 @@
 <template>
   <v-row align="center" justify="center" class="ma-3">
-    <v-col cols="12" md="4" sm="10">
+    <v-col cols="12" md="5" sm="10">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar color="#3A3F51" dark>

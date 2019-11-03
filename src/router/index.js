@@ -66,6 +66,11 @@ export default new Router({
       name:'/Login',
       path:'/Login',
       component:()=>import('@/views/Pages/Login') 
+    },
+    {
+      name:'/Register',
+      path:'/Register',
+      component:()=>import('@/views/Pages/Register')
     }
   ]
 })
