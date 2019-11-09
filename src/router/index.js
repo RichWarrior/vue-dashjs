@@ -71,6 +71,11 @@ export default new Router({
       name:'/Register',
       path:'/Register',
       component:()=>import('@/views/Pages/Register')
+    },
+    {
+      name:'/RecoverPassword',
+      path:'/RecoverPassword',
+      component:()=>import('@/views/Pages/RecoverPassword')
     }
   ]
 })
