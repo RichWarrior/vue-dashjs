@@ -13,7 +13,7 @@ export default {
   data : () => ({
     drawer:false
   }),
-  beforeDestroy(){
+  beforeUpdate(){
     this.$store.dispatch(CHECK_AUTHORIZE_STATUS,true);
   }
 }

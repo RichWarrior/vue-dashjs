@@ -1,6 +1,6 @@
 <template>
   <v-row align="center" justify="center" class="ma-3">
-    <v-col cols="12" md="5" sm="10">
+    <v-col cols="12" md="4" sm="10">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar color="#3A3F51" dark>
@@ -13,11 +13,11 @@
           </v-toolbar>
           <v-card-text>
             <v-form v-model="valid">
-              <v-row>
-                <v-col cols="12" md="12" sm="12" class="text-center">
+              <v-row class="ma-0">
+                <v-col cols="12" md="12" sm="12" class="text-center pa-1">
                   <span class="black--text">SIGN IN TO CONTIUNE.</span>
                 </v-col>
-                <v-col cols="12" md="12" sm="12">
+                <v-col class="pa-1" cols="12" md="12" sm="12">
                   <v-text-field
                     v-model="email"
                     outlined
@@ -51,7 +51,7 @@
                   <span class="subtitle-1 black--text">Need to Signup?</span>
                 </v-col>
                 <v-col cols="12" md="12" sm="12">
-                  <v-btn block color="#FFFFFF">Register Now</v-btn>
+                  <v-btn block @click="$router.push({path:'/Register'})">Register Now</v-btn>
                 </v-col>
               </v-row>
             </v-form>
@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import {CHECK_AUTHORIZE_STATUS} from '@/store/actions.type';
+import { CHECK_AUTHORIZE_STATUS } from "@/store/actions.type";
 export default {
   data: () => ({
     valid: false,
@@ -85,10 +85,10 @@ export default {
     login() {
       this.$router.push({ path: "/" });
     }
-  }, 
-  created(){
-    this.$store.dispatch(CHECK_AUTHORIZE_STATUS,false)
-  } 
+  },
+  created() {
+    this.$store.dispatch(CHECK_AUTHORIZE_STATUS, false);
+  }
 };
 </script>
 
