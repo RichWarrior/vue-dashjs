@@ -76,6 +76,11 @@ export default new Router({
       name:'/RecoverPassword',
       path:'/RecoverPassword',
       component:()=>import('@/views/Pages/RecoverPassword')
+    },
+    {
+      name:'/Lock',
+      path:'/Lock',
+      component:()=>import('@/views/Pages/Lock')
     }
   ]
 })

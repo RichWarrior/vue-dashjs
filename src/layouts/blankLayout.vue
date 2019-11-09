@@ -8,10 +8,14 @@
 </template>
 
 <script>
+import {CHANGE_BLANK_STATUS} from '@/store/actions.type';
 export default {
   data: () => ({
     drawer: false
-  })
+  }),
+  beforeUpdate(){
+    this.$store.dispatch(CHANGE_BLANK_STATUS,false);
+  }
 };
 </script>
 
