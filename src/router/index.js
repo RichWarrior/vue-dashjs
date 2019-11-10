@@ -81,11 +81,16 @@ export default new Router({
       name:'/Lock',
       path:'/Lock',
       component:()=>import('@/views/Pages/Lock')
+    },    
+    {
+      name:'/500',
+      path:'/500',
+      component:()=>import('@/views/Pages/500')
     },
     {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
-    }
+    },
   ]
 })
