@@ -88,6 +88,11 @@ export default new Router({
       component:()=>import('@/views/Pages/500')
     },
     {
+      name:'/BugTracker',
+      path:'/BugTracker',
+      component:()=>import('@/views/Extras/BugTracker')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
