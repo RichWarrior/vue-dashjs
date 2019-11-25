@@ -98,9 +98,14 @@ export default new Router({
       component:()=>import('@/views/Extras/FAQ')
     },
     {
+      name:'/FileManager',
+      path:'/FileManager',
+      component:()=>import('@/views/Extras/FileManager')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
-    },
+    },    
   ]
 })
