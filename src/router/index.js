@@ -103,6 +103,21 @@ export default new Router({
       component:()=>import('@/views/Extras/FileManager')
     },
     {
+      name:'/Plans',
+      path:'/Plans',
+      component:()=>import('@/views/Extras/Plans')
+    },
+    {
+      name:'/Timeline',
+      path:'/Timeline',
+      component:()=>import('@/views/Extras/Timeline')
+    },
+    {
+      name:'/Calendar',
+      path:'/Calendar',
+      component:()=>import('@/views/Extras/Calendar')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')

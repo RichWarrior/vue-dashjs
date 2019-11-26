@@ -205,6 +205,36 @@ export default {
         name: "A good song.ogg",
         size: "6.3MB",
         time: "10m Ago"
+      },
+      {
+        icon: "fa fa-music",
+        name: "A good song.ogg",
+        size: "6.3MB",
+        time: "10m Ago"
+      },
+      {
+        icon: "fa fa-music",
+        name: "A good song.ogg",
+        size: "6.3MB",
+        time: "10m Ago"
+      },
+      {
+        icon: "fa fa-music",
+        name: "A good song.ogg",
+        size: "6.3MB",
+        time: "10m Ago"
+      },
+      {
+        icon: "fa fa-music",
+        name: "A good song.ogg",
+        size: "6.3MB",
+        time: "10m Ago"
+      },
+      {
+        icon: "fa fa-music",
+        name: "A good song.ogg",
+        size: "6.3MB",
+        time: "10m Ago"
       }
     ]
   })
