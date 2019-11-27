@@ -118,6 +118,11 @@ export default new Router({
       component:()=>import('@/views/Extras/Calendar')
     },
     {
+      name:'/Widgets',
+      path:'/Widgets',
+      component:()=>import('@/views/Widgets/index')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')

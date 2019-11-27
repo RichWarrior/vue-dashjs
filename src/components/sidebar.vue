@@ -2,8 +2,8 @@
   <div class="sidebar">
     <v-navigation-drawer
       app
-      v-model="drawerStatus"      
-      fixed      
+      v-model="drawerStatus"
+      fixed
       color="sidebarColor"
       dark
       inset
@@ -24,10 +24,9 @@
 
             <v-list-item-title class="white--text caption text-justify">{{item.name}}</v-list-item-title>
           </v-list-item>
-          <v-list-group v-if="isNested(item.id)" color="white">
+          <v-list-group v-if="isNested(item.id)" color="white" :prepend-icon="item.icon" no-action>
             <template v-slot:activator>
-              <v-icon class="white--text text-justify">{{item.icon}}</v-icon>
-              <v-list-item-title class="text-center white--text caption">{{item.name}}</v-list-item-title>
+              <v-list-item-title class="white--text caption">{{item.name}}</v-list-item-title>
             </template>
 
             <v-list-item
@@ -106,7 +105,7 @@ export default {
         name: "Spinner",
         icon: "fa fa-spinner",
         route: "/Spinner"
-      },      
+      },
       {
         id: 8,
         parentMenuId: 3,
@@ -148,7 +147,7 @@ export default {
         name: "Charts",
         icon: "fas fa-chart-pie",
         route: "/Charts"
-      },     
+      },
       {
         id: 14,
         parentMenuId: 0,
@@ -157,102 +156,131 @@ export default {
         route: "/Table"
       },
       {
-          id:15,
-          parentMenuId:0,
-          name:'Pages',
-          icon:'fas fa-folder',
-          route:'/Pages'
+        id: 15,
+        parentMenuId: 0,
+        name: "Pages",
+        icon: "fas fa-folder",
+        route: "/Pages"
       },
       {
-          id:16,
-          parentMenuId:15,
-          name:'Login',
-          icon:'fas fa-sign-in-alt',
-          route:'/Login'
+        id: 16,
+        parentMenuId: 15,
+        name: "Login",
+        icon: "fas fa-sign-in-alt",
+        route: "/Login"
       },
       {
-          id:17,
-          parentMenuId:15,
-          name:'Register',
-          icon:'fas fa-user-plus',
-          route:'/register'
+        id: 17,
+        parentMenuId: 15,
+        name: "Register",
+        icon: "fas fa-user-plus",
+        route: "/register"
       },
       {
-          id:18,
-          parentMenuId:15,
-          name:'Recover Password',
-          icon:'fa fa-unlock-alt',
-          route:'/RecoverPassword'
-      },
-       {
-          id:19,
-          parentMenuId:15,
-          name:'Lock',
-          icon:'fa fa-lock',
-          route:'/Lock'
+        id: 18,
+        parentMenuId: 15,
+        name: "Recover Password",
+        icon: "fa fa-unlock-alt",
+        route: "/RecoverPassword"
       },
       {
-          id:20,
-          parentMenuId:15,
-          name:'Not Found',
-          icon:'fas fa-exclamation-triangle',
-          route:'*'
+        id: 19,
+        parentMenuId: 15,
+        name: "Lock",
+        icon: "fa fa-lock",
+        route: "/Lock"
       },
       {
-          id:21,
-          parentMenuId:15,
-          name:'Error 500',
-          icon:'fas fa-bug',
-          route:'/500'
+        id: 20,
+        parentMenuId: 15,
+        name: "Not Found",
+        icon: "fas fa-exclamation-triangle",
+        route: "*"
       },
       {
-        id:22,
-        parentMenuId:0,
-        name:'Extras',
-        icon:'fa fa-mug-hot',
-        route:'/Extras'
-      },{
-        id:23,
-        parentMenuId:22,
-        name:'Bug Tracker',
-        icon:'fa fa-bug',
-        route:'/BugTracker'
+        id: 21,
+        parentMenuId: 15,
+        name: "Error 500",
+        icon: "fas fa-bug",
+        route: "/500"
       },
       {
-        id:24,
-        parentMenuId:22,
-        name:'FAQ',
-        icon:'fa fa-headset',
-        route:'/faq'
+        id: 22,
+        parentMenuId: 0,
+        name: "Extras",
+        icon: "fa fa-mug-hot",
+        route: "/Extras"
       },
       {
-        id:25,
-        parentMenuId:22,
-        name:'File Manager',
-        icon:'fa fa-hdd',
-        route:'/FileManager'
+        id: 23,
+        parentMenuId: 22,
+        name: "Bug Tracker",
+        icon: "fa fa-bug",
+        route: "/BugTracker"
       },
       {
-        id:26,
-        parentMenuId:22,
-        name:'Plans',
-        icon:'fa fa-file-invoice-dollar',
-        route:'/Plans'
+        id: 24,
+        parentMenuId: 22,
+        name: "FAQ",
+        icon: "fa fa-headset",
+        route: "/faq"
       },
       {
-        id:27,
-        parentMenuId:22,
-        name:'Timeline',
-        icon:'fa fa-stopwatch',
-        route:'/Timeline'
+        id: 25,
+        parentMenuId: 22,
+        name: "File Manager",
+        icon: "fa fa-hdd",
+        route: "/FileManager"
       },
       {
-        id:28,
-        parentMenuId:22,
-        name:'Calendar',
-        icon:'fa fa-calendar-alt',
-        route:'/Calendar'
-      }
+        id: 26,
+        parentMenuId: 22,
+        name: "Plans",
+        icon: "fa fa-file-invoice-dollar",
+        route: "/Plans"
+      },
+      {
+        id: 27,
+        parentMenuId: 22,
+        name: "Timeline",
+        icon: "fa fa-stopwatch",
+        route: "/Timeline"
+      },
+      {
+        id: 28,
+        parentMenuId: 22,
+        name: "Calendar",
+        icon: "fa fa-calendar-alt",
+        route: "/Calendar"
+      },
+      // {
+      //   id: 29,
+      //   parentMenuId: 0,
+      //   name: "Pickers",
+      //   icon: "fa fa-crosshairs",
+      //   route: ""
+      // },
+      // {
+      //   id: 30,
+      //   parentMenuId: 29,
+      //   name: "Time Picker",
+      //   icon: "fa fa-clock",
+      //   route: "/TimePicker"
+      // },
+      // {
+      //   id: 31,
+      //   parentMenuId: 29,
+      //   name: "Color Picker",
+      //   icon: "fa fa-palette",
+      //   route: "/ColorPicker"
+      // },
+      // {
+      //   id: 32,
+      //   parentMenuId: 29,
+      //   name: "Date Picker",
+      //   icon: "fa fa-calendar-alt",
+      //   route: "/DatePicker"
+      // }
     ]
   }),
   computed: {
