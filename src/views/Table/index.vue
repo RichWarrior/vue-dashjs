@@ -1,7 +1,7 @@
 <template>
-  <v-container fluid>
-    <v-row class="ma-2">
-      <v-col cols="12" md="12" sm="12">
+  <v-container fluid class="pa-0">
+    <v-row class="ma-0">
+      <v-col cols="12" md="12" sm="12" class="pa-1">
         <v-hover v-slot:default="{hover}">
           <v-card :elevation="hover ? 12 : 2">
             <v-toolbar>
@@ -10,7 +10,7 @@
               </v-toolbar-title>
             </v-toolbar>
             <v-card-text>
-              <v-row>
+              <v-row class="ma-0">
                 <v-col cols="12" sm="12" md="6">
                   <v-card>
                     <v-toolbar>
@@ -23,7 +23,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -35,7 +35,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -47,7 +47,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -64,7 +64,7 @@
           </v-card>
         </v-hover>
       </v-col>
-      <v-col cols="12" sm="12" md="12">
+      <v-col cols="12" sm="12" md="12" class="pa-1">
         <v-hover v-slot:default="{hover}">
           <v-card :elevation="hover ? 12 : 2">
             <v-toolbar>
@@ -73,8 +73,8 @@
               </v-toolbar-title>
             </v-toolbar>
             <v-card-text>
-              <v-row>
-                <v-col cols="12" sm="12" md="6">
+              <v-row class="ma-0">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -86,7 +86,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -98,7 +98,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -110,7 +110,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" md="6" sm="12">
+                <v-col cols="12" md="6" sm="12" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -122,7 +122,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -134,7 +134,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -146,7 +146,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" md="6" sm="12">
+                <v-col cols="12" md="6" sm="12" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -160,7 +160,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" md="6" sm="12">
+                <v-col cols="12" md="6" sm="12" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -172,7 +172,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" md="6" sm="12">
+                <v-col cols="12" md="6" sm="12" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -184,7 +184,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" md="6" sm="12">
+                <v-col cols="12" md="6" sm="12" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -196,7 +196,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" md="6" sm="12">
+                <v-col cols="12" md="6" sm="12" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -208,7 +208,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -220,7 +220,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>
@@ -232,7 +232,7 @@
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="12" sm="12" md="6">
+                <v-col cols="12" sm="12" md="6" class="pa-1">
                   <v-card>
                     <v-toolbar>
                       <v-toolbar-title>

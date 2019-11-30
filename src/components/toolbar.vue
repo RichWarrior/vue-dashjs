@@ -16,7 +16,7 @@
         <v-btn icon>
           <v-icon small>fa fa-user</v-icon>
         </v-btn>
-        <v-btn icon>
+        <v-btn icon @click="$router.push({path:'/Lock'})">
           <v-icon small>fa fa-lock</v-icon>
         </v-btn>
         <v-spacer></v-spacer>
@@ -26,6 +26,36 @@
         <v-btn icon>
           <v-icon small>fa fa-bell</v-icon>
         </v-btn>
+      </v-row>
+      <v-row justify="end" class="hidden-sm-and-up">
+        <v-menu>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn v-bind="attrs" v-on="on" icon>
+              <v-icon>fa fa-ellipsis-h</v-icon>
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item>
+              <v-list-item-title>
+                <v-row class="ma-0">
+                  <v-icon small>fa fa-user</v-icon>
+                  <v-col class="pa-1">
+                    <span>Profile</span>
+                  </v-col>
+                </v-row>
+              </v-list-item-title>
+            </v-list-item>
+            <v-list-item @click="$router.push({path:'/Lock'})">
+              <v-row class="ma-0">
+                <v-icon small>fa fa-lock</v-icon>
+                <v-col class="pa-1">
+                  <span>Lock</span>
+                </v-col>
+              </v-row>
+            </v-list-item>           
+          </v-list>
+        </v-menu>
       </v-row>
     </v-app-bar>
   </div>

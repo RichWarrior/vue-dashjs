@@ -1,6 +1,6 @@
 <template>
-  <v-row class="ma-2">
-    <v-col cols="12" md="6" sm="12">
+  <v-row class="ma-0">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -61,7 +61,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -121,7 +121,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -160,7 +160,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 :2">
           <v-toolbar>
@@ -199,7 +199,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 :2">
           <v-toolbar>
@@ -267,7 +267,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -329,7 +329,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -354,7 +354,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -373,7 +373,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 : 2">
           <v-toolbar>

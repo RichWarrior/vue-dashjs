@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row class="ma-2">
+    <v-row class="ma-0">
       <v-col class="pa-1" cols="12" lg="4" md="4">
         <v-hover v-slot:default="{hover}">
           <v-card :elevation="hover ? 12 : 2">

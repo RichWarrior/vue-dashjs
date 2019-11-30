@@ -1,6 +1,6 @@
 <template>
-  <v-row class="ma-2">
-    <v-col cols="12" md="6" sm="12">
+  <v-row class="ma-0">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="400" :elevation="hover ? 12 :2">
           <v-toolbar>
@@ -30,7 +30,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="400" :elevation="hover ? 12: 2">
           <v-toolbar>
@@ -82,7 +82,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="450" :elevation="hover?  12 :2">
           <v-toolbar>
@@ -112,7 +112,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="450" :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -151,7 +151,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="725" :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -185,8 +185,8 @@
               </v-toolbar>
 
               <v-container fluid>
-                <v-row dense>
-                  <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+                <v-row dense class="ma-0">
+                  <v-col class="pa-1" v-for="card in cards" :key="card.title" :cols="card.flex" :lg="card.flex" :md="card.flex">
                     <v-card>
                       <v-img
                         :src="card.src"
@@ -221,7 +221,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" sm="12" md="6">
+    <v-col cols="12" sm="12" md="6" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="725" :elevation="hover ? 12 :2">
           <v-toolbar>
@@ -297,7 +297,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="600" :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -342,7 +342,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="600" :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -392,7 +392,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="850" :elevation="hover ? 12 : 2">
           <v-toolbar>
@@ -447,7 +447,7 @@
         </v-card>
       </v-hover>
     </v-col>
-    <v-col cols="12" md="6" sm="12">
+    <v-col cols="12" md="6" sm="12" class="pa-1">
       <v-hover v-slot:default="{hover}">
         <v-card height="850" :elevation="hover?12:2">
           <v-toolbar>

@@ -252,35 +252,7 @@ export default {
         name: "Calendar",
         icon: "fa fa-calendar-alt",
         route: "/Calendar"
-      },
-      // {
-      //   id: 29,
-      //   parentMenuId: 0,
-      //   name: "Pickers",
-      //   icon: "fa fa-crosshairs",
-      //   route: ""
-      // },
-      // {
-      //   id: 30,
-      //   parentMenuId: 29,
-      //   name: "Time Picker",
-      //   icon: "fa fa-clock",
-      //   route: "/TimePicker"
-      // },
-      // {
-      //   id: 31,
-      //   parentMenuId: 29,
-      //   name: "Color Picker",
-      //   icon: "fa fa-palette",
-      //   route: "/ColorPicker"
-      // },
-      // {
-      //   id: 32,
-      //   parentMenuId: 29,
-      //   name: "Date Picker",
-      //   icon: "fa fa-calendar-alt",
-      //   route: "/DatePicker"
-      // }
+      },    
     ]
   }),
   computed: {
