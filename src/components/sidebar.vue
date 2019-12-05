@@ -253,6 +253,27 @@ export default {
         icon: "fa fa-calendar-alt",
         route: "/Calendar"
       },    
+      {
+        id:29,
+        parentMenuId:3,
+        name:'Progress Bars',
+        icon:'fa fa-spinner',
+        route:'/ProgressBar'
+      },
+      {
+        id:30,
+        parentMenuId:3,
+        name:'Chips',
+        icon:'fa fa-bookmark',
+        route:'/Chips'
+      },
+      {
+        id:31,
+        parentMenuId:3,
+        name:'Alerts',
+        icon:'fa fa-exclamation',
+        route:'/Alerts'
+      }
     ]
   }),
   computed: {

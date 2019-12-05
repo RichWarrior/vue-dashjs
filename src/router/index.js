@@ -123,6 +123,21 @@ export default new Router({
       component:()=>import('@/views/Widgets/index')
     },
     {
+      name:'/ProgressBar',
+      path:'/ProgressBar',
+      component:()=>import('@/views/Elements/Progress')
+    },
+    {
+      name:'/Chips',
+      path:'/Chips',
+      component:()=>import('@/views/Elements/Chips')
+    },
+    {
+      name:'/Alerts',
+      path:'/Alerts',
+      component:()=>import('@/views/Elements/Alerts')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
