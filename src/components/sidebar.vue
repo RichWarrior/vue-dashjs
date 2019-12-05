@@ -19,12 +19,12 @@
         <div v-for="(item,index) in getMainMenu" v-bind:key="index">
           <v-list-item v-if="!isNested(item.id)" @click="route(item.id)">
             <v-list-item-icon>
-              <v-icon class="white--text text-justify">{{item.icon}}</v-icon>
+              <v-icon class="white--text">{{item.icon}}</v-icon>
             </v-list-item-icon>
 
-            <v-list-item-title class="white--text caption text-justify">{{item.name}}</v-list-item-title>
+            <v-list-item-title class="white--text caption">{{item.name}}</v-list-item-title>
           </v-list-item>
-          <v-list-group v-if="isNested(item.id)" color="white" :prepend-icon="item.icon" no-action>
+          <v-list-group v-if="isNested(item.id)" color="white" :prepend-icon="item.icon">
             <template v-slot:activator>
               <v-list-item-title class="white--text caption">{{item.name}}</v-list-item-title>
             </template>
@@ -36,9 +36,9 @@
               class="ma-2"
             >
               <v-list-item-action>
-                <v-icon class="white--text">{{crud.icon}}</v-icon>
+                <v-icon size="16" class="white--text">{{crud.icon}}</v-icon>
               </v-list-item-action>
-              <v-list-item-title class="white--text text-justify caption">{{crud.name}}</v-list-item-title>
+              <v-list-item-title class="white--text text-left caption">{{crud.name}}</v-list-item-title>
             </v-list-item>
           </v-list-group>
         </div>
