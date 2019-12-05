@@ -54,13 +54,13 @@
         <v-card-text>
           <v-row class="ma-0">
             <v-col class="pa-1">
-              <v-progress-linear :value="25" :buffer-value="bufferValue"></v-progress-linear>
+              <v-progress-linear :value="25" :buffer-value="100"></v-progress-linear>
               <br />
-              <v-progress-linear :value="50" :buffer-value="bufferValue" color="purple"></v-progress-linear>
+              <v-progress-linear :value="50" :buffer-value="100" color="purple"></v-progress-linear>
               <br />
-              <v-progress-linear :value="75" :buffer-value="bufferValue" color="red lighten-2"></v-progress-linear>
+              <v-progress-linear :value="75" :buffer-value="100" color="red lighten-2"></v-progress-linear>
               <br />
-              <v-progress-linear :value="100" :buffer-value="bufferValue" color="black"></v-progress-linear>
+              <v-progress-linear :value="100" :buffer-value="100" color="black"></v-progress-linear>
             </v-col>
           </v-row>
         </v-card-text>
