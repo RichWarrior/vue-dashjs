@@ -10,6 +10,7 @@ Vue.config.productionTip = false
 
 router.beforeEach((to,from,next)=>{
   store.dispatch(CHECK_AUTHORIZE_STATUS,true);
+  window.scrollTo(0,0);
   next();
 })
 
