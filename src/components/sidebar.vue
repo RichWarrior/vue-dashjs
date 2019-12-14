@@ -273,6 +273,13 @@ export default {
         name:'Alerts',
         icon:'fa fa-exclamation',
         route:'/Alerts'
+      },
+      {
+        id:32,
+        parentMenuId:10,
+        name:'Pickers',
+        icon:'fa fa-crosshairs',
+        route:'/Pickers'
       }
     ]
   }),

@@ -138,6 +138,11 @@ export default new Router({
       component:()=>import('@/views/Elements/Alerts')
     },
     {
+      name:'/Pickers',
+      path:'/Pickers',
+      component:()=>import('@/views/Forms/Pickers')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
