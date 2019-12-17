@@ -4,8 +4,7 @@
       <v-hover v-slot:default="{hover}">
         <v-card :elevation="hover ? 12 :2">
           <v-toolbar>
-            <v-toolbar-title>
-              
+            <v-toolbar-title>              
               <h1 class="title">Date pickers - Allowed dates</h1>
             </v-toolbar-title>
           </v-toolbar>
