@@ -35,6 +35,12 @@
               <v-col class="pa-1" cols="12" lg="6" md="6">
                 <monthusage />
               </v-col>
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <monthcolor />
+              </v-col>
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <monthallowed/>
+              </v-col>
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -44,6 +50,7 @@
 </template>
 
 <script>
+// Date
 import dateusage from "@/components/DatePickers/Usage";
 import datecolor from "@/components/DatePickers/Color";
 import dateallowed from "@/components/DatePickers/AllowedDate";
@@ -51,7 +58,10 @@ import datereacttodisplay from "@/components/DatePickers/ReactToDisplay";
 import dateinternationalization from "@/components/DatePickers/Internationalization";
 import datereadonly from "@/components/DatePickers/ReadOnly";
 import datecurrentindicator from "@/components/DatePickers/CurrentDateIndicator";
+// Month
 import monthusage from "@/components/MonthPickers/Usage";
+import monthcolor from '@/components/MonthPickers/Colors';
+import monthallowed from '@/components/MonthPickers/Allowed';
 export default {
   components: {
     dateusage,
@@ -61,7 +71,9 @@ export default {
     dateinternationalization,
     datereadonly,
     datecurrentindicator,
-    monthusage
+    monthusage,
+    monthcolor,
+    monthallowed
   }
 };
 </script>

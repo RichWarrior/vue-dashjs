@@ -3,7 +3,7 @@
     <v-card width="100%">
       <v-toolbar>
         <v-toolbar-title>
-          <h1 class="title">Month Usage</h1>
+          <h1 class="title">Month Pickers Usage</h1>
         </v-toolbar-title>
       </v-toolbar>
       <v-card-text class="pa-1">
