@@ -1,6 +1,6 @@
 <template>
   <v-row class="ma-1">
-    <v-col class="pa-0" cols="12">
+    <v-col class="pa-1" cols="12">
       <v-expansion-panels class="elevation-12" accordion>
         <v-expansion-panel key="monthpicker">
           <v-expansion-panel-header>
@@ -53,6 +53,20 @@
               <v-col class="pa-1" cols="12" lg="6" md="6">
                 <monthdialog />
               </v-col>
+            </v-row>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-col>
+      <v-col class="pa-1" cols="12">
+      <v-expansion-panels class="elevation-12" accordion>
+        <v-expansion-panel key="monthpicker">
+          <v-expansion-panel-header>
+            <h1 class="title">Time Pickers</h1>
+          </v-expansion-panel-header>
+          <v-expansion-panel-content class="ma-0 pa-0">
+            <v-row class="ma-0">
+
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
