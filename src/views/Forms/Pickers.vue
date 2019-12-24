@@ -41,6 +41,18 @@
               <v-col class="pa-1" cols="12" lg="6" md="6">
                 <monthallowed/>
               </v-col>
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <monthmultiple />
+              </v-col>
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <monthreadonly />
+              </v-col>
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <monthcurrentindicator />
+              </v-col>
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <monthdialog />
+              </v-col>
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -62,6 +74,10 @@ import datecurrentindicator from "@/components/DatePickers/CurrentDateIndicator"
 import monthusage from "@/components/MonthPickers/Usage";
 import monthcolor from '@/components/MonthPickers/Colors';
 import monthallowed from '@/components/MonthPickers/Allowed';
+import monthmultiple from '@/components/MonthPickers/Multiple';
+import monthreadonly from '@/components/MonthPickers/ReadOnly';
+import monthcurrentindicator from '@/components/MonthPickers/CurrentIndicator';
+import monthdialog from '@/components/MonthPickers/Dialog';
 export default {
   components: {
     dateusage,
@@ -73,7 +89,11 @@ export default {
     datecurrentindicator,
     monthusage,
     monthcolor,
-    monthallowed
+    monthallowed,
+    monthmultiple,
+    monthreadonly,
+    monthcurrentindicator,
+    monthdialog
   }
 };
 </script>
