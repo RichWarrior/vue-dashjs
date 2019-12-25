@@ -60,7 +60,7 @@
     </v-col>
     <v-col class="pa-1" cols="12">
       <v-expansion-panels class="elevation-12" accordion>
-        <v-expansion-panel key="monthpicker">
+        <v-expansion-panel key="timepicker">
           <v-expansion-panel-header>
             <h1 class="title">Time Pickers</h1>
           </v-expansion-panel-header>
@@ -68,6 +68,27 @@
             <v-row class="ma-0">
               <v-col class="pa-1" cols="12">
                 <timedialog />
+              </v-col>
+            </v-row>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-col>
+    <v-col class="pa-1" cols="12">
+      <v-expansion-panels class="elevation-12" accordion>
+        <v-expansion-panel key="colorpicker">
+          <v-expansion-panel-header>
+            <h1 class="title">Color Pickers</h1>
+          </v-expansion-panel-header>
+          <v-expansion-panel-content class="ma-0 pa-0">
+            <v-row class="ma-0">
+              <v-col class="pa-1" cols="12" lg="6" md="6">
+                <colorusage />
+              </v-col>
+            </v-row>
+             <v-row class="ma-0">
+              <v-col class="pa-1" cols="12" >
+                <colorswatches />
               </v-col>
             </v-row>
           </v-expansion-panel-content>
@@ -96,6 +117,10 @@ import monthcurrentindicator from "@/components/MonthPickers/CurrentIndicator";
 import monthdialog from "@/components/MonthPickers/Dialog";
 // Time
 import timedialog from "@/components/TimePickers/Dialog";
+
+// Color
+import colorusage from "@/components/ColorPickers/Usage";
+import colorswatches from "@/components/ColorPickers/Swatches";
 export default {
   components: {
     dateusage,
@@ -112,7 +137,9 @@ export default {
     monthreadonly,
     monthcurrentindicator,
     monthdialog,
-    timedialog
+    timedialog,
+    colorusage,
+    colorswatches
   }
 };
 </script>
