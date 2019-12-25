@@ -28,7 +28,7 @@
               </v-col>
               <v-col class="pa-1" cols="12" lg="6" md="6">
                 <datecurrentindicator />
-              </v-col>              
+              </v-col>
             </v-row>
             <v-divider class="my-5"></v-divider>
             <v-row class="ma-0">
@@ -39,7 +39,7 @@
                 <monthcolor />
               </v-col>
               <v-col class="pa-1" cols="12" lg="6" md="6">
-                <monthallowed/>
+                <monthallowed />
               </v-col>
               <v-col class="pa-1" cols="12" lg="6" md="6">
                 <monthmultiple />
@@ -58,7 +58,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-col>
-      <v-col class="pa-1" cols="12">
+    <v-col class="pa-1" cols="12">
       <v-expansion-panels class="elevation-12" accordion>
         <v-expansion-panel key="monthpicker">
           <v-expansion-panel-header>
@@ -66,7 +66,9 @@
           </v-expansion-panel-header>
           <v-expansion-panel-content class="ma-0 pa-0">
             <v-row class="ma-0">
-
+              <v-col class="pa-1" cols="12">
+                <timedialog />
+              </v-col>
             </v-row>
           </v-expansion-panel-content>
         </v-expansion-panel>
@@ -86,12 +88,14 @@ import datereadonly from "@/components/DatePickers/ReadOnly";
 import datecurrentindicator from "@/components/DatePickers/CurrentDateIndicator";
 // Month
 import monthusage from "@/components/MonthPickers/Usage";
-import monthcolor from '@/components/MonthPickers/Colors';
-import monthallowed from '@/components/MonthPickers/Allowed';
-import monthmultiple from '@/components/MonthPickers/Multiple';
-import monthreadonly from '@/components/MonthPickers/ReadOnly';
-import monthcurrentindicator from '@/components/MonthPickers/CurrentIndicator';
-import monthdialog from '@/components/MonthPickers/Dialog';
+import monthcolor from "@/components/MonthPickers/Colors";
+import monthallowed from "@/components/MonthPickers/Allowed";
+import monthmultiple from "@/components/MonthPickers/Multiple";
+import monthreadonly from "@/components/MonthPickers/ReadOnly";
+import monthcurrentindicator from "@/components/MonthPickers/CurrentIndicator";
+import monthdialog from "@/components/MonthPickers/Dialog";
+// Time
+import timedialog from "@/components/TimePickers/Dialog";
 export default {
   components: {
     dateusage,
@@ -107,7 +111,8 @@ export default {
     monthmultiple,
     monthreadonly,
     monthcurrentindicator,
-    monthdialog
+    monthdialog,
+    timedialog
   }
 };
 </script>
