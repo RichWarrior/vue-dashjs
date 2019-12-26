@@ -280,6 +280,13 @@ export default {
         name:'Pickers',
         icon:'fa fa-crosshairs',
         route:'/Pickers'
+      },
+      {
+        id:33,
+        parentMenuId:22,
+        name:'Payment',
+        icon:'far fa-credit-card',
+        route:'/Payment'
       }
     ]
   }),

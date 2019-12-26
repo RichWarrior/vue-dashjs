@@ -143,6 +143,11 @@ export default new Router({
       component:()=>import('@/views/Forms/Pickers')
     },
     {
+      name:'/Payment',
+      path:'/Payment',
+      component:()=>import('@/views/Extras/Payment')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
