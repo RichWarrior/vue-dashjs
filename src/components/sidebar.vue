@@ -287,6 +287,13 @@ export default {
         name:'Payment',
         icon:'far fa-credit-card',
         route:'/Payment'
+      },
+      {
+        id:34,
+        parentMenuId:10,
+        name:'Editors',
+        icon:'fa fa-text-width',
+        route:'/Editors'
       }
     ]
   }),

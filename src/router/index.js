@@ -148,6 +148,11 @@ export default new Router({
       component:()=>import('@/views/Extras/Payment')
     },
     {
+      name:'/Editors',
+      path:'/Editors',
+      component:()=>import('@/views/Forms/Editors')
+    },
+    {
       name:'/*',
       path:'/*',
       component:()=>import('@/views/Pages/404')
