@@ -18,27 +18,31 @@ import 'vue-toast-notification/dist/index.css';
 import 'vue-loaders/dist/vue-loaders.css';
 import VueLoaders from 'vue-loaders';
 
+//Tour
+import VueTour from 'vue-tour'
+require('vue-tour/dist/vue-tour.css')
 
-function setupComponents(Vue){
+
+function setupComponents(Vue) {
     //Defined Components
-    Vue.component('dashjs-toolbar',toolbar);
-    Vue.component('dashjs-sidebar',sidebar);
-    Vue.component('dashjs-footer',footer);
+    Vue.component('dashjs-toolbar', toolbar);
+    Vue.component('dashjs-sidebar', sidebar);
+    Vue.component('dashjs-footer', footer);
 
     //Defined Layouts
-    Vue.component('dashjs-authorize',authorizelayout);
-    Vue.component('dashjs-unauthorize',unauthorizelayout);
-    Vue.component('dashjs-blank',blanklayout);
+    Vue.component('dashjs-authorize', authorizelayout);
+    Vue.component('dashjs-unauthorize', unauthorizelayout);
+    Vue.component('dashjs-blank', blanklayout);
 
     Vue.use(VueSweetalert2)
 
-    Vue.use(require('vue-moment'));
+    Vue.use(require('vue-moment'));    
     Vue.prototype.moment = moment
     moment.locale('tr')
-    
+
     Vue.use(VueToast)
     Vue.use(VueLoaders);
-
+    Vue.use(VueTour)
 }
 
 export {

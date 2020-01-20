@@ -27,16 +27,17 @@ export default {
   }),
   methods: {
     onEditorBlur(quill) {
-      console.log("editor blur!", quill);
+      window.console.log("editor blur!", quill);
     },
     onEditorFocus(quill) {
-      console.log("editor focus!", quill);
+      window.console.log("editor focus!", quill);
     },
     onEditorReady(quill) {
-      console.log("editor ready!", quill);
+      window.console.log("editor ready!", quill);
     },
     onEditorChange({ quill, html, text }) {
       window.console.log(text);
+      window.console.log(quill)
       this.content = html;
     }
   },

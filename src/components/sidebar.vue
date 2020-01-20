@@ -294,6 +294,13 @@ export default {
         name:'Editors',
         icon:'fa fa-text-width',
         route:'/Editors'
+      },
+      {
+        id:35,
+        parentMenuId:3,
+        name:'Tour',
+        icon:'fas fa-map-marker-alt',
+        route:'/Tour'
       }
     ]
   }),

@@ -18,6 +18,9 @@
     <v-col class="pa-1" cols="12" sm="12" md="12">
       <textareacp />
     </v-col>
+    <v-col class="pa-1" cols="12" sm="12" md="12">
+<dropdowns />
+    </v-col>
   </v-row>
 </template>
 
@@ -28,6 +31,7 @@ import fileinputs from "@/components/Forms/FileInputs";
 import forms from "@/components/Forms/Forms";
 import sliders from "@/components/Forms/Sliders";
 import textareacp from "@/components/Forms/TextArea.vue";
+import dropdowns from "@/components/Forms/DropDown.vue";
 export default {
   components: {
     autocompletes,
@@ -35,7 +39,8 @@ export default {
     fileinputs,
     forms,
     sliders,
-    textareacp
+    textareacp,
+    dropdowns
   }
 };
 </script>
